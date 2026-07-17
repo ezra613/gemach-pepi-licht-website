@@ -1,5 +1,6 @@
 import Image from "next/image";
 import DonateForm from "./components/DonateForm";
+import StoryVideo from "./components/StoryVideo";
 
 const NAV = [
   { href: "#about", label: "About" },
@@ -109,14 +110,7 @@ export default function Home() {
             Creating Lasting Joy: The Pepi Licht Foundation Story
           </h2>
           <div className="mt-10 overflow-hidden rounded-2xl shadow-xl shadow-black/10">
-            <video
-              controls
-              preload="none"
-              poster="/video-poster.jpg"
-              className="w-full aspect-video object-cover bg-black"
-            >
-              <source src="/gemach-video.mp4" type="video/mp4" />
-            </video>
+            <StoryVideo />
           </div>
         </div>
       </section>
